@@ -16,23 +16,78 @@
     </header>
 
 <!-- Formulário -->
-    <form action=""  method="get">
+    <form action=""  method="get" class="speaker-form">
 
-        <section>
+        <!-- Usuário e Senha -->
+
+    <section>
+        <section class ='line-content'>
             <h2>Usuário e Senha</h2>
-            <label for="">Nome Completo:</label>
-            <input type="text">
+            <label for="full-name">Nome Completo:</label>
+            <input type="text" name="fullName" id="full-name" autocomplete="off">
         </section>
 
         <section>
-            <label for="">E-mail:</label>
-            <input type="email">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" autocomplete="off">
         </section>
 
         <section>
-            <label for="">Senha:</label>
-            <input type="password">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" autocomplete="off">
         </section>
+    </section>
+
+    <!-- Tipo de Palestra -->
+    <section>
+        <h2>Tipo de Palestra</h2>
+        <input type="radio" name="type" id="main">
+        <label for="main" value="main">Palco Principal</label>
+
+        <input type="radio" name="type" id="secondary">
+        <label for="secondary" value="secondary">Palco Secundário</label>
+
+
+        <input type="radio" name="type" id="workshop">
+        <label for="workshop" valeu="workshop">WorkShop</label>
+    </section>
+<!-- Informações Pessoais -->
+    <section>
+        <h2>Informações pessoais</h2>
+
+        <label for="t-shirt">Tamanho da Camiseta</label>
+        <select name="t-shit-size" id="t-shirt" name="t-shirt">
+            <option value="pp">PP - Extra Pequeno</option>
+            <option value="p">P - Pequeno</option>
+            <option value="m">M - Médio</option>
+            <option value="g">G - Grande</option>
+            <option value="gg">GG - Extra Grande</option>
+        </select>
+
+        <label for="color">Cor Favorita</label>
+        <input type="color" id="color" name="color">
+
+        <label for="Foto">Foto</label>
+        <input type="file" name="picture" id="pictur-file">
+
+    </section>
+
+    <!-- Resumo da Palestra -->
+    <section class="line-content">
+        <h2>Resumo da Palestra:</h2>
+        <textarea name="" id="" cols="30" rows="10" maxlength="500" placeholder="Descreva sua palestra em 500 caracteres ou menos" class-ro="form-row">
+        </textarea>
+
+    </section>
+
+<!-- Botões -->
+
+    <section>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </section>
+
     </form>
+
 </body>
 </html>
